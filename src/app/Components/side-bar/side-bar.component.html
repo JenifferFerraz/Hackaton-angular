@@ -1,0 +1,74 @@
+<mat-nav-list class="bg-blue-base h-screen w-full">
+  <div
+    class="flex flex-col justify-start items-center w-auto bg-blue-base h-auto text-white"
+  >
+    <button
+      type="button"
+      class="hover:bg-white p- rounded-lg hover:text-blue-base py-2 border-transparent sm:hidden"
+      (click)="toggleSidebar()"
+      [ngClass]="{ hidden: isSidebarOpen }"
+    >
+      <mat-icon class="mx-2 text-2xl">menu</mat-icon>
+    </button>
+
+    <img
+      src="assets/Base-logo.png"
+      alt="Logo"
+      class="m-4 w-18 mt-4 hidden sm:block"
+    />
+  </div>
+  <mat-divider></mat-divider>
+  <div class="max-w-full sm:max-w-[400px] mx-auto p-4 sm:p-6 space-y-4">
+    <div class="flex flex-col justify-center items-center">
+      <button
+        routerLink="/"
+        type="button"
+        class="hover:bg-white rounded-lg hover:text-blue-base w-full my-1 py-2 border-transparent text-left"
+      >
+        <mat-icon class="mx-2 text-2xl">home</mat-icon>
+        <span>Início</span>
+      </button>
+      <button
+        type="button"
+        class="hover:bg-white rounded-lg hover:text-blue-base w-full my-2 py-2 border-transparent text-left"
+      >
+        <mat-icon class="mx-2 text-2xl">list_alt</mat-icon>
+        <span>Registro</span>
+      </button>
+
+      <button
+        type="button"
+        class="hover:bg-white rounded-lg hover:text-blue-base w-full my-2 py-2 border-transparent text-left"
+        (click)="toggleCadastro()"
+      >
+        <mat-icon class="mx-2 text-2xl">perm_contact_calendar</mat-icon>
+        <span>Cadastro</span>
+      </button>
+      <div *ngIf="isCadastroOpen">
+        <button
+          routerLink="cadastro-efetivo"
+          type="button"
+          class="hover:bg-white rounded-lg hover:text-blue-base w-full py-2 text-left"
+        >
+          <mat-icon class="mx-2 text-2xl">flight</mat-icon>
+          <span>Efetivos</span>
+        </button>
+        <button
+          routerLink="cadastro-visitante"
+          type="button"
+          class="hover:bg-white rounded-lg hover:text-blue-base w-full py-2 text-left"
+        >
+          <mat-icon class="mx-2 sm:mx-0 text-2xl">directions_walk</mat-icon>
+          <span>Visitantes</span>
+        </button>
+      </div>
+
+      <button
+        type="button"
+        class="border border-white rounded-lg hover:bg-white w-full sm:w-32 my-3 py-2 hover:text-blue-base mt-4 sm:mt-28"
+      >
+        Sair
+      </button>
+    </div>
+  </div>
+</mat-nav-list>

@@ -1,0 +1,97 @@
+<div class="text-black bg-white min-h-screen w-full items-center">
+  <div class="flex flex-row p-4 items-center justify-between">
+    <button
+      class="border rounded-lg p-2 hover:bg-blue-base hover:text-white ml-auto border-blue-base w-24 text-blue-base text-sm"
+    >
+      <span>Voltar</span>
+    </button>
+  </div>
+  <div class="flex items-center justify-center flex-col">
+    <p class="text-xl sm:text-2xl">Cadastro de Efetivos</p>
+  </div>
+  <div
+    class="max-w-full sm:max-w-[400px] mx-4 sm:mx-auto space-y-4 items-center justify-center"
+  >
+    <form action="" class="flex flex-col gap-2">
+      <label for="Nome"
+        >Nome
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          required
+          class="border-blue-base border w-full my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <label for="NomeDeGuerra"
+        >Nome de Guerra
+        <input
+          type="text"
+          name="nome_de_guerra"
+          placeholder="Nome de Guerra"
+          required
+          class="border-blue-base border w-full my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <label for="SARAM"
+        >SARAM
+        <input
+          type="text"
+          name="saram"
+          placeholder="SARAM"
+          required
+          class="border-blue-base border w-full my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <label for="CPF"
+        >CPF
+        <input
+          type="text"
+          name="Cpf"
+          placeholder="CPF"
+          required
+          class="border-blue-base border w-full my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <div class="sm:flex sm:space-x-4">
+        <div class="flex-1">
+          <label for="Cargo"
+            >Cargo
+            <input
+              type="text"
+              name="cargo"
+              placeholder="Cargo"
+              required
+              class="border-blue-base border w-full sm:w-48 my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+            />
+          </label>
+        </div>
+        <div class="flex-1">
+          <label for="Unidade"
+            >Unidade
+            <input
+              type="text"
+              name="unidade"
+              placeholder="Unidade"
+              required
+              class="border-blue-base border w-full sm:w-48 my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <button
+          type="submit"
+          class="bg-blue-base border-blue-base border text-white hover:bg-white hover:text-blue-base w-full sm:w-32 h-10 rounded-lg"
+        >
+          Confirmar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

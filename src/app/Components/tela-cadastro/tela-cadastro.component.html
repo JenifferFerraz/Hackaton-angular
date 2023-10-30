@@ -1,0 +1,50 @@
+<div class="md:h-72 md:w-96 bg-white flex flex-col">
+  <div class="p-4 justify-between items-center flex flex-row">
+    <span class="text-gray-500 text-2xl">Novo cadastro</span>
+    <button
+      class="ml-auto border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-32 text-blue-base"
+    >
+      Fechar
+    </button>
+  </div>
+  <div class="flex flex-col mt-4 justify-center items-center">
+    <div class="space-y-4">
+      <button
+        routerLink="cadastro-efetivo"
+        class="md:mr-8 border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-36 text-blue-base relative group"
+      >
+        <div class="image-container relative">
+          <img
+            src="assets/efetivo PB.png"
+            alt=""
+            class="ml-4 image group-hover:opacity-0"
+          />
+          <img
+            src="assets/efetivo Cor.png"
+            alt=""
+            class="ml-4 hover-image absolute inset-0 opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        Efetivo
+      </button>
+      <button
+        routerLink="cadastro-visitante"
+        class="border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-36 text-blue-base relative group"
+      >
+        <div class="image-container relative">
+          <img
+            src="assets/vistante PB.png"
+            alt=""
+            class="ml-4 image group-hover:opacity-0"
+          />
+          <img
+            src="assets/visitante Cor.png"
+            alt=""
+            class="ml-4 hover-image absolute inset-0 opacity-0 group-hover:opacity-100"
+          />
+        </div>
+        Visitante
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="text-black min-h-screen flex-col bg-white h-screen w-full">
+  <div
+    class="p-4 h-auto w-auto text-blue-base justify-center items-center space-y-3"
+  >
+    <p class="font-medium text-4xl">SCA - Sistema de Controle de Acessos</p>
+    <p class="font-medium text-2xl">Início</p>
+  </div>
+  <div
+    class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 pl-4 md:pl-8 mt-4 h-auto"
+  >
+    <button
+      class="border border-gray-base rounded-xl shadow-lg hover:bg-gray-base w-full sm:w-32 py-2 hover:text-blue-base flex flex-col items-center"
+    >
+      <img
+        src="assets/list-square-svgrepo-com.svg"
+        alt=""
+        class="text-blue-base mb-2 h-12 sm:h-16"
+      />
+      <span class="text-ml mb-1">Registro</span>
+    </button>
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+      class="border border-gray-base rounded-xl shadow-lg hover:bg-gray-base w-full sm:w-32 py-2 hover:text-blue-base flex flex-col items-center"
+    >
+      <img
+        src="assets/user-svgrepo-com.svg"
+        alt=""
+        class="text-blue-base mb-2 h-12 sm:h-16"
+      />
+      <span class="text-ml mb-1">Novo cadastro</span>
+    </button>
+    <button
+      class="border border-gray-base rounded-xl shadow-lg hover:bg-gray-base w-full sm:w-32 py-2 hover:text-blue-base flex flex-col items-center"
+    >
+      <img
+        src="assets/user-id-portrait-svgrepo-com (1).svg"
+        alt=""
+        class="text-blue-base mb-2 h-12 sm:h-16"
+      />
+      <span class="text-ml mb-1">Cadastros</span>
+    </button>
+  </div>
+  <div class="p-4 flex justify-left items-center flex-row mt-5">
+    <h2>Entradas e saídas</h2>
+  </div>
+</div>

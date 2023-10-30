@@ -1,0 +1,58 @@
+<div class="text-black bg-white min-h-screen w-full items-center">
+  <div class="flex flex-row p-10 items-center justify-center">
+    <button
+      class="flex-row border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-32 text-blue-base justify-center ml-auto text-xl"
+    >
+      <span>Voltar</span>
+    </button>
+  </div>
+  <div class="flex items-center justify-center p-6 flex-col">
+    <p class="text-2xl">Cadastro de Visitante</p>
+    <span class="items-center justify-center h-32 w-32 bg-gray-200 flex"></span>
+  </div>
+
+  <div
+    class="max-w-[400px] w-full mx-auto p-6 space-y-4 items-center justify-center"
+  >
+    <form action="" class="flex flex-col gap-1">
+      <label for="Nome">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          required
+          class="border-blue-base border w-96 my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <label for="CPF">
+        <input
+          type="string"
+          id="cpf"
+          name="cpf"
+          placeholder="CPF"
+          required
+          class="border-blue-base border w-96 my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+
+      <label for="Telefone">
+        <input
+          type="number"
+          name="telefone"
+          placeholder="Telefone"
+          required
+          class="border-blue-base border w-96 my-2 rounded-lg py-2 bg-gray-div placeholder-gray-text pl-2"
+        />
+      </label>
+      <div class="flex justify-center">
+        <button
+          type="submit"
+          class="bg-blue-base border-blue-base border text-white hover:bg-white hover:text-blue-base w-32 h-10 rounded-lg"
+        >
+          Confirmar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
