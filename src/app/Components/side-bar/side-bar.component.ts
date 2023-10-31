@@ -9,6 +9,7 @@ export class SideBarComponent {
   isSidebarOpen = false;
   isMobile: boolean = false;
   isCadastroOpen = false;
+  
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
