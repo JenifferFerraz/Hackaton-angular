@@ -1,0 +1,39 @@
+<div class="mt-8 ml-10">
+<p class="text-4xl text-blue-base">SCA - Sistema de Controle de Acessos</p>
+<p class="text-xl pt-6 text-blue-base">Cadastro Solicitado</p>
+</div>
+
+<div class="flex justify-center items-center gap-8 flex-col">
+    <img src="/assets/images/perfil.png" class="h-32 w-32 mb-4" alt="foto de perfil">
+
+    <form class="flex items-center flex-col gap-2">
+        <label for="Nome completo" class="text-blue-base"> Nome completo*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+    
+        <!-- SEPARANDO CPF E TELEFONE EM ROW -->
+        <div class="flex flex-row space-x-8">
+        <label for="CPF" class="text-blue-base"> CPF*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-4/3 h-8">
+        </label>
+    
+        <label for="Telefone" class="text-blue-base"> Telefone*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-4/3 h-8">
+        </label>
+        </div>
+        <!-- FIM DA SEPARAÇÃO -->
+    
+        <label for="Data de nascimento" class="text-blue-base"> Data de nascimento
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+    
+        <label for="Email" class="text-blue-base"> Email*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+
+        <div class="flex flex-row gap-4">
+        <button class="border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-36 text-blue-base relative group">Aprovar</button>
+        <button class="border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-36 text-blue-base relative group">Não Aprovar</button>
+        </div>
+    </form>
+</div>

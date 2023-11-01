@@ -1,0 +1,55 @@
+<img src="/assets/images/fundo.png" alt="base" class="bg-blue-base relative flex w-full h-full">
+
+<div class="bg-white w-auto h-100 absolute inset-y-20 inset-x-60">
+    <div class="flex justify-center mt-6 items-center">
+        <img src="/assets/images/image2.png" alt="logo" class="h-10">
+        <p class="text-blue-base pl-4">Base Aérea de Anápolis</p>
+    </div>
+
+    <div class="flex justify-center">
+        <p class="text-lg text-blue-base">Pré-Cadastro</p>
+    </div>
+
+    <form class="flex items-center flex-col gap-2">
+        <label for="Nome completo" class="text-blue-base"> Nome completo*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+    
+        <!-- SEPARANDO CPF E TELEFONE EM ROW -->
+        <div class="flex flex-row space-x-8">
+        <label for="CPF" class="text-blue-base"> CPF*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-4/3 h-8">
+        </label>
+    
+        <label for="Telefone" class="text-blue-base"> Telefone*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-4/3 h-8">
+        </label>
+        </div>
+        <!-- FIM DA SEPARAÇÃO -->
+    
+        <label for="Data de nascimento" class="text-blue-base"> Data de nascimento
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+    
+        <label for="Email" class="text-blue-base"> Email*
+            <input type="text" required class="block rounded-lg border-blue-base border-2 w-96 h-8">
+        </label>
+
+        <div class="flex flex-row">
+            <!-- FIX: Transformar Imagem em Botão -->
+        <img src="/assets/images/camera.png" alt="camera" class="mr-8">
+
+        <button
+        routerLink="cadastro-efetivo"
+        class="md:mr-8 border rounded-lg p-2 hover:bg-blue-base hover:text-white border-blue-base w-36 text-blue-base relative group"
+      >Adicionar Envio</button>
+        </div>
+        <p class="font-normal text-gray-text h-2">Foto estilo 3x4*</p>
+
+        <p class="text-gray-text">Possui veículo próprio?</p>
+        <input type="checkbox" class="h-4">
+
+
+    </form>
+    
+</div>
